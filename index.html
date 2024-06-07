@@ -4,42 +4,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap"
+      rel="stylesheet"
+    />
     <title>AI poem generator</title>
   </head>
   <body>
-    <h1>welcome to the spanish poem generator</h1>
+    <div class="container">
+      <header>
+        <h1>welcome to the spanish poem generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="enter the topic of the spanish poem"
-          autofocus
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        poem here
-        <br />
-        amor eterno
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="enter the topic of the spanish poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem">
+          poem here
+          <br />
+          amor eterno
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/melerokristy" target="_blank"
-        >Kristy Melero</a
-      >
-      and is
-      <a href="https://github.com/melerokristy/poem-generator" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://poem-generator-spanish.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/melerokristy" target="_blank"
+          >Kristy Melero</a
+        >
+        and is
+        <a
+          href="https://github.com/melerokristy/poem-generator"
+          target="_blank"
+        >
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://poem-generator-spanish.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
