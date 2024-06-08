@@ -1,6 +1,4 @@
-function generatePoem(event) {
-  event.preventDefault();
-
+function displayPoem(response) {
   new Typewriter("#poem", {
     strings: Response.data.answer,
     autoStart: true,
